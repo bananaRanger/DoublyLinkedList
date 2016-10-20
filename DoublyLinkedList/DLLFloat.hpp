@@ -9,6 +9,19 @@
 #ifndef DLLFloat_hpp
 #define DLLFloat_hpp
 
-#include <stdio.h>
+#include "DLLType.hpp"
+
+class DLLFloat : public DLLType
+{
+private:
+    float value;
+    
+public:
+    DLLFloat(float newValue);
+    DLLFloat();
+    ~DLLFloat();
+    void showValue();
+    DLLFloat& operator=(float newValue);
+};
 
 #endif /* DLLFloat_hpp */

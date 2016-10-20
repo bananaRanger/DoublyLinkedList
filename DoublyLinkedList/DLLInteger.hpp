@@ -9,6 +9,19 @@
 #ifndef DLLInteger_hpp
 #define DLLInteger_hpp
 
-#include <stdio.h>
+#include "DLLType.hpp"
+
+class DLLInteger : public DLLType
+{
+private:
+    int value;
+    
+public:
+    DLLInteger(int newValue);
+    DLLInteger();
+    ~DLLInteger();
+    void showValue();
+    DLLInteger& operator=(int newValue);
+};
 
 #endif /* DLLInteger_hpp */

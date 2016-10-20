@@ -9,6 +9,20 @@
 #ifndef DLLString_hpp
 #define DLLString_hpp
 
-#include <stdio.h>
+#include "DLLType.hpp"
+#include <cstring>
+
+class DLLStirng : public DLLType
+{
+private:
+    string value;
+    
+public:
+    DLLStirng(string newValue);
+    DLLStirng();
+    ~DLLStirng();
+    void showValue();
+    DLLStirng& operator=(string newValue);
+};
 
 #endif /* DLLString_hpp */

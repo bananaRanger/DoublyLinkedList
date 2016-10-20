@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EA2090AA1DB8D9A20064AE7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2090A91DB8D9A20064AE7E /* main.cpp */; };
+		EA2090B61DB8DBDD0064AE7E /* DLLInteger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2090B41DB8DBDD0064AE7E /* DLLInteger.cpp */; };
+		EA2090BA1DB8E0870064AE7E /* DLLFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2090B81DB8E0870064AE7E /* DLLFloat.cpp */; };
+		EA2090BE1DB8E1240064AE7E /* DLLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2090BC1DB8E1240064AE7E /* DLLString.cpp */; };
+		EA2090C21DB8E7340064AE7E /* DLLList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2090C01DB8E7340064AE7E /* DLLList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		EA2090A61DB8D9A10064AE7E /* DoublyLinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DoublyLinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2090A91DB8D9A20064AE7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EA2090B11DB8DAF60064AE7E /* DLLType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DLLType.hpp; sourceTree = "<group>"; };
+		EA2090B41DB8DBDD0064AE7E /* DLLInteger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DLLInteger.cpp; sourceTree = "<group>"; };
+		EA2090B51DB8DBDD0064AE7E /* DLLInteger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DLLInteger.hpp; sourceTree = "<group>"; };
+		EA2090B81DB8E0870064AE7E /* DLLFloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DLLFloat.cpp; sourceTree = "<group>"; };
+		EA2090B91DB8E0870064AE7E /* DLLFloat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DLLFloat.hpp; sourceTree = "<group>"; };
+		EA2090BC1DB8E1240064AE7E /* DLLString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DLLString.cpp; sourceTree = "<group>"; };
+		EA2090BD1DB8E1240064AE7E /* DLLString.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DLLString.hpp; sourceTree = "<group>"; };
+		EA2090C01DB8E7340064AE7E /* DLLList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DLLList.cpp; sourceTree = "<group>"; };
+		EA2090C11DB8E7340064AE7E /* DLLList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DLLList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +70,58 @@
 		EA2090A81DB8D9A10064AE7E /* DoublyLinkedList */ = {
 			isa = PBXGroup;
 			children = (
+				EA2090B31DB8DB070064AE7E /* Types */,
+				EA2090C31DB8E7370064AE7E /* List */,
 				EA2090A91DB8D9A20064AE7E /* main.cpp */,
 			);
 			path = DoublyLinkedList;
+			sourceTree = "<group>";
+		};
+		EA2090B31DB8DB070064AE7E /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				EA2090B11DB8DAF60064AE7E /* DLLType.hpp */,
+				EA2090B71DB8DBFC0064AE7E /* Integer */,
+				EA2090BB1DB8E08F0064AE7E /* Float */,
+				EA2090BF1DB8E1260064AE7E /* String */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		EA2090B71DB8DBFC0064AE7E /* Integer */ = {
+			isa = PBXGroup;
+			children = (
+				EA2090B51DB8DBDD0064AE7E /* DLLInteger.hpp */,
+				EA2090B41DB8DBDD0064AE7E /* DLLInteger.cpp */,
+			);
+			name = Integer;
+			sourceTree = "<group>";
+		};
+		EA2090BB1DB8E08F0064AE7E /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				EA2090B91DB8E0870064AE7E /* DLLFloat.hpp */,
+				EA2090B81DB8E0870064AE7E /* DLLFloat.cpp */,
+			);
+			name = Float;
+			sourceTree = "<group>";
+		};
+		EA2090BF1DB8E1260064AE7E /* String */ = {
+			isa = PBXGroup;
+			children = (
+				EA2090BD1DB8E1240064AE7E /* DLLString.hpp */,
+				EA2090BC1DB8E1240064AE7E /* DLLString.cpp */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		EA2090C31DB8E7370064AE7E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EA2090C11DB8E7340064AE7E /* DLLList.hpp */,
+				EA2090C01DB8E7340064AE7E /* DLLList.cpp */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2090BA1DB8E0870064AE7E /* DLLFloat.cpp in Sources */,
+				EA2090C21DB8E7340064AE7E /* DLLList.cpp in Sources */,
+				EA2090BE1DB8E1240064AE7E /* DLLString.cpp in Sources */,
 				EA2090AA1DB8D9A20064AE7E /* main.cpp in Sources */,
+				EA2090B61DB8DBDD0064AE7E /* DLLInteger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

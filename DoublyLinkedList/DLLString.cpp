@@ -7,3 +7,28 @@
 //
 
 #include "DLLString.hpp"
+
+DLLStirng::DLLStirng(string newValue) {
+    
+    this->value = newValue;
+}
+
+DLLStirng::DLLStirng() {
+    
+    this->value = "";
+}
+
+DLLStirng::~DLLStirng() {
+    
+    this->value = "";
+}
+
+void DLLStirng::showValue() {
+    cout << this->value << endl;
+}
+
+DLLStirng& DLLStirng::operator=(string newValue) {
+    
+    this->value = newValue;
+    return *this;
+}
